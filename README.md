@@ -44,7 +44,7 @@ ployii_ruk@hotmail.com:123456789
 
 Result: Mysql INSERT query
 <pre>
-INSERT INTO correopass (Correo, Pass, Coleccion, Tipo) VALUES
+INSERT INTO leaks (email, password, collection, type) VALUES
 ("pantiwast@hotmail.com","123456789","Collection #1","leak"),
 ("paixnidiap@gmail.com","123456789","Collection #1","leak"),
 ("evelyne_110@live.fr","123456789","Collection #1","leak"),
