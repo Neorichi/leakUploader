@@ -7,7 +7,7 @@ The next characters have being replace by:
 <pre>" -> [0x22] </pre>
 <pre>' -> [0x27] </pre>
 <pre>/ -> [0x26] </pre>
-<pre>\ -> [[0x25] </pre>
+<pre>\ -> [0x25] </pre>
 
 #### Important
 
