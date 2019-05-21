@@ -11,7 +11,7 @@ The next characters have being replace by:
 
 #### Important
 
-Add "Example schema table" in your database
+Add "Example schema table" in your database (Mysql)
 <pre>
 CREATE TABLE `leaks` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -26,6 +26,7 @@ CREATE TABLE `leaks` (
 
 ## Usage
 <pre>usage: bash uploader.sh  </pre>
+<pre>usage: bash uploader_mongo.sh  </pre>
 
 ## Example
 Leak List
@@ -55,4 +56,20 @@ INSERT INTO leaks (email, password, collection, type) VALUES
 ("yous_@hotmail.it","123456789","Collection #1","leak"),
 ("kamron.marshall@yahoo.com","123456789[0x27]","Collection #1","leak"),
 ;
+</pre>
+
+
+Result: MongoDB json to insert
+<pre>
+[
+ {"email": "pantiwast@hotmail.com", "password": "123456789", "collection": "Collection #1", "type": "leak"},
+ {"email": "paixnidiap@gmail.com", "password": "123456789", "collection": "Collection #1", "type": "leak"},
+ {"email": "evelyne_110@live.fr", "password": "123456789", "collection": "Collection #1", "type": "leak"},
+ {"email": "hell_aran@live.com", "password": "123456789", "collection": "Collection #1", "type": "leak"},
+ {"email": "manuelmaina@hotmail.com", "password": "123456789[0x22]", "collection": "Collection #1", "type": "leak"},
+ {"email": "muhtesem_yunus027@hotmail.com", "password": "123456789[0x26]", "collection": "Collection #1", "type": "leak"},
+ {"email": "yovana_caridad_2006@hotmail.com", "password": "123456789", "collection": "Collection #1", "type": "leak"},
+ {"email": "yous_@hotmail.it", "password": "123456789", "collection": "Collection #1", "type": "leak"},
+ {"email": "kamron.marshall@yahoo.com", "password": "123456789[0x27]", "collection": "Collection #1", "type": "leak"},
+]
 </pre>
