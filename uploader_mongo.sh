@@ -14,5 +14,5 @@ do
    echo "]" >> db.txt
    #mongoimport --host localhost --username --password  --jsonArray --db leaks --collection leaks --file db.txt
    mongoimport --host localhost --jsonArray --db leaks --collection leaks --file db.txt
-   #mongo db.leaks.find()
+   #mongo db.leaks.find({"email": /.*hotmail.com/})
 done
